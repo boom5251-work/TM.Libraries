@@ -7,4 +7,33 @@
     <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Resources\Icons\Dark\Close.png" />
+    <None Remove="Resources\Icons\Dark\Maximize.png" />
+    <None Remove="Resources\Icons\Dark\Minimize.png" />
+    <None Remove="Resources\Icons\Dark\Normalize.png" />
+    <None Remove="Resources\Icons\Light\Close.png" />
+    <None Remove="Resources\Icons\Light\Maximize.png" />
+    <None Remove="Resources\Icons\Light\Minimize.png" />
+    <None Remove="Resources\Icons\Light\Normalize.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Light\Normalize.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Dark\Close.png" />
+    <Resource Include="Resources\Icons\Dark\Maximize.png" />
+    <Resource Include="Resources\Icons\Dark\Minimize.png" />
+    <Resource Include="Resources\Icons\Dark\Normalize.png" />
+    <Resource Include="Resources\Icons\Light\Close.png" />
+    <Resource Include="Resources\Icons\Light\Maximize.png" />
+    <Resource Include="Resources\Icons\Light\Minimize.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controls\" />
+  </ItemGroup>
+
 </Project>
