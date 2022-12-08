@@ -12,10 +12,26 @@
     <None Remove="Resources\Icons\Dark\Maximize.png" />
     <None Remove="Resources\Icons\Dark\Minimize.png" />
     <None Remove="Resources\Icons\Dark\Normalize.png" />
+    <None Remove="Resources\Icons\Dark\ObjectExplorer\Folder.png" />
+    <None Remove="Resources\Icons\Dark\ObjectExplorer\StudioProject.png" />
+    <None Remove="Resources\Icons\Dark\Service\ArrorCornerFill.png" />
+    <None Remove="Resources\Icons\Dark\Service\ArrorRight.png" />
     <None Remove="Resources\Icons\Light\Close.png" />
     <None Remove="Resources\Icons\Light\Maximize.png" />
     <None Remove="Resources\Icons\Light\Minimize.png" />
     <None Remove="Resources\Icons\Light\Normalize.png" />
+    <None Remove="Resources\Icons\Light\ObjectExplorer\Folder.png" />
+    <None Remove="Resources\Icons\Light\ObjectExplorer\StudioProject.png" />
+    <None Remove="Resources\Icons\Light\Service\ArrorCornerFill.png" />
+    <None Remove="Resources\Icons\Light\Service\ArrorRight.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Dark\ObjectExplorer\Folder.png" />
+    <Resource Include="Resources\Icons\Dark\ObjectExplorer\StudioProject.png" />
+    <Resource Include="Resources\Icons\Dark\Service\ArrorCornerFill.png" />
+    <Resource Include="Resources\Icons\Dark\Service\ArrorRight.png" />
+    <Resource Include="Resources\Icons\Light\ObjectExplorer\Folder.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,10 +46,9 @@
     <Resource Include="Resources\Icons\Light\Close.png" />
     <Resource Include="Resources\Icons\Light\Maximize.png" />
     <Resource Include="Resources\Icons\Light\Minimize.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controls\" />
+    <Resource Include="Resources\Icons\Light\ObjectExplorer\StudioProject.png" />
+    <Resource Include="Resources\Icons\Light\Service\ArrorCornerFill.png" />
+    <Resource Include="Resources\Icons\Light\Service\ArrorRight.png" />
   </ItemGroup>
 
 </Project>

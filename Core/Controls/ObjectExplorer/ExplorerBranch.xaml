@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="Core.Controls.ObjectExplorer.ExplorerBranch"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Core.Controls.ObjectExplorer">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Core;component/Resources/Dictionaries/ControlStylesDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition Width="20" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Image x:Name="arrorIcon"
+                   Style="{StaticResource ObjectExplorerArrow}"
+                   Source="{DynamicResource ArrorCornerFillIcon}"
+                   MouseLeftButtonDown="ArrorIcon_MouseLeftButtonDown" />
+
+            <Image Style="{StaticResource ObjectExplorerIcon}"
+                   Source="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:ExplorerBranch}}, Path=Icon}"/>
+
+            <Label Style="{StaticResource ObjectExplorerLabel}"
+                   Content="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:ExplorerBranch}}, Path=Text}" />
+        </Grid>
+
+        <StackPanel Style="{StaticResource ObjectExplorerChildNodesPanel}">
+            <ItemsControl x:Name="itemsControl" />
+        </StackPanel>
+    </Grid>
+</UserControl>
